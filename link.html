@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>This is For You</title>
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #0b0b0f;
+
+      }
       .nav-button {
         padding: 16px 32px;
         font-size: 15px;
         font-weight: bold;
-        background-color: #0959da;
-        color: white;
-        border: none;
         border-radius: 8px;
         cursor: pointer;
         width: 100%;
+        animation: pulse 1s ease-out;
+        background-color: #0b0b0f;
+        color: #00f3ff;
+        border: 2px solid #00f3ff;
+        box-shadow: 0 0 8px #00f3ff, inset 0 0 8px rgba(0, 243, 255, 0.3);
+        text-shadow: 0 0 5px #00f3ff;
 
       }
       .nav-button:active {
         transform: scale(0.97);
 
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.1); opacity: 0; }
+        100% {transform: scale(1); opacity: 1; }
       }
 
     </style>
@@ -30,5 +46,6 @@
        <a href="https://dakscodings.github.io/Codics/" target="_blank">
          <button class="nav-button">Please Clik Me</button>
       </a>
+
   </body>
 </html>
