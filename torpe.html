@@ -7,7 +7,13 @@
             <style>
     
              body {
-                background-color: #060608;
+                background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('Cutie.jpg');
+
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+
                 color: #ffffff;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 display: flex;
@@ -46,6 +52,8 @@
                  text-align: center;
                  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
                  scroll-behavior: smooth;
+                 margin-bottom: 20px;
+                 animation: borderglow 3s infinite ease-in-out;
                 }
 
             .lyrics-container::-webkit-scrollbar {
@@ -66,15 +74,37 @@
                  font-size: 24px;
                  opacity: 1;
                  text-shadow: 0 0 12px #00f3ff;
-                transform: scale(1.08);
+                 transform: scale(1.06);
+                 animation: textpop 0.4s ease-out;
                   }
+
+            @keyframes borderglow {
+             0%, 100% {
+                 border-color: #00f3ff;
+                 box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+                }
+             50% {
+                border-color: #0077ff;
+                box-shadow: 0 0 25px rgba(0, 119, 255, 0.6);
+                }
+            }
+
+            @keyframes poptext{
+                0% {
+                    opacity: 0.5;
+                    transform: scale(0.95);
+                }
+                100% {
+                    opacity: 1;
+                    transform: scale(1.06);
+                }
+            }
+                  
              </style>
       </head>
 <body>
 
     <h1>Torpe by JAO</h1>
-
-       <audio id="audio-player" src="torpe.mp3" controls></audio>
 
          <div class="lyrics-container">
              <p class="lyric-line" data-time="0">♪ (Intro Music) ♪</p>
@@ -121,7 +151,9 @@
              <p class="lyric-line" data-time="142">Hmm, torpe torpe torpe</p>
              <p class="lyric-line" data-time="145">Ako</p>
              <p class="lyric-line" data-time="148">♪ (Outro) ♪</p>
-        </div>
+                      </div>
+
+           <audio id="audio-player" src="torpe.mp3" controls></audio>
 
                <script>
                   const audio = document.getElementById('audio-player');
