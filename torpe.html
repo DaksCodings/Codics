@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Torpe by JAO</title>
+            <style>
+    
+             body {
+                background-color: #060608;
+                color: #ffffff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+                box-sizing: border-box;
+                }
+
+            h1 {
+                 color: #00f3ff;
+                 text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+                 margin-bottom: 25px;
+                }
+
+            audio {
+                 margin-bottom: 30px;
+                 width: 100%;
+                 max-width: 400px;
+                 border-radius: 30px;
+                 box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+                }
+
+            .lyrics-container {
+                 width: 95%;
+                 max-width: 450px;
+                 height: 300px;
+                 overflow-y: auto;
+                 background-color: rgba(15, 15, 20, 0.95);
+                 border: 2px solid #00f3ff;
+                 border-radius: 12px;
+                 padding: 20px;
+                 text-align: center;
+                 box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+                 scroll-behavior: smooth;
+                }
+
+            .lyrics-container::-webkit-scrollbar {
+                 display: none;
+                }
+
+            .lyric-line {
+                 color: #555566;
+                 font-size: 18px;
+                 margin: 25px 0;
+                 transition: all 0.4s ease;
+                 opacity: 0.6;
+                 }
+
+            .lyric-line.active {
+                 color: #00f3ff;
+                 font-weight: bold;
+                 font-size: 24px;
+                 opacity: 1;
+                 text-shadow: 0 0 12px #00f3ff;
+                transform: scale(1.08);
+                  }
+             </style>
+      </head>
+<body>
+
+    <h1>Torpe by JAO</h1>
+
+       <audio id="audio-player" src="torpe.mp3" controls></audio>
+
+         <div class="lyrics-container">
+             <p class="lyric-line" data-time="0">♪ (Intro Music) ♪</p>
+             <p class="lyric-line" data-time="12">Oh ang yabang yabang</p>
+             <p class="lyric-line" data-time="13">Kapag ikaw ay wala</p>
+             <p class="lyric-line" data-time="18">Lakas lakas magkwento</p>
+             <p class="lyric-line" data-time="20">Ang tikas, 'lang hiya!</p>
+             <p class="lyric-line" data-time="23">Iba't ibang taong nakakasama</p>
+             <p class="lyric-line" data-time="25">Pero 'pag ikaw na?</p>
+             <p class="lyric-line" data-time="28">Bumibilis  tibok ng puso</p>
+             <p class="lyric-line" data-time="30">Diyos ko, heto na nga</p>
+             <p class="lyric-line" data-time="33">Oh, bakit ba 'pag lumapit</p>
+             <p class="lyric-line" data-time="37">Nawawala ang angas ko!</p>
+             <p class="lyric-line" data-time="44">Bakit 'di ako makaamin kapag nandiyan ka na?</p>
+             <p class="lyric-line" data-time="49">Palaging sumisilip katorpehan ko, putangina</p>
+             <p class="lyric-line" data-time="54">Tumitiklop na parang suso</p>
+             <p class="lyric-line" data-time="56">Oh, Diyos ko, tama ka na</p>
+             <p class="lyric-line" data-time="59">Kailangan nga ba mawawala ang katorpehan ko, sinta</p>
+             <p class="lyric-line" data-time="64">Oh, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="67">Hmm torpe torpe torpe</p>
+             <p class="lyric-line" data-time="69">Hmm torpe torpe torpe</p>
+             <p class="lyric-line" data-time="72">Ako</p>
+             <p class="lyric-line" data-time="74">Oh, ang daming sinasabi</p>
+             <p class="lyric-line" data-time="77">Kapag ikaw ay wala</p>
+             <p class="lyric-line" data-time="80">Lakas lakas kiligin</p>
+             <p class="lyric-line" data-time="82">Ang kapal, 'lang hiya</p>
+             <p class="lyric-line" data-time="85">Iba't ibang tao nakakasama</p>
+             <p class="lyric-line" data-time="88">Pero 'pag ikaw na?</p>
+             <p class="lyric-line" data-time="91">Bumibilis tibok ng puso</p>
+             <p class="lyric-line" data-time="92">Diyos ko heto na nga </p>
+             <p class="lyric-line" data-time="95">Oh, bakit ba 'pag lumapit</p>
+             <p class="lyric-line" data-time="100">Nawawala ang angas ko?</p>
+             <p class="lyric-line" data-time="107">Bakit'di ako makaamin kapag nandiyan ka na</p>
+             <p class="lyric-line" data-time="112">Palaging sumisilip katorpehan ko, putangina</p>
+             <p class="lyric-line" data-time="117">Tumitiklop na parang suso</p>
+             <p class="lyric-line" data-time="119">Oh, Diyos ko, tama ka na!</p>
+             <p class="lyric-line" data-time="122">Kailan nga ba mawawala ang katorpehan ko, sinta?</p>
+             <p class="lyric-line" data-time="127">Oh, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="128">Hmm, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="131">Hmm, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="134">Ako</p>
+             <p class="lyric-line" data-time="137">Hmm, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="139">Hmm, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="142">Hmm, torpe torpe torpe</p>
+             <p class="lyric-line" data-time="145">Ako</p>
+             <p class="lyric-line" data-time="148">♪ (Outro) ♪</p>
+        </div>
+
+               <script>
+                  const audio = document.getElementById('audio-player');
+                  const lines = document.querySelectorAll('.lyric-line');
+
+                audio.addEventListener('timeupdate', () => {
+                const currentTime = audio.currentTime;
+                let activeLine = null;
+
+      // Find the lyric that corresponds to the current audio time
+      lines.forEach((line) => {
+        const lineTime = parseFloat(line.getAttribute('data-time'));
+        if (currentTime >= lineTime) {
+          activeLine = line;
+        }
+      });
+
+      if (activeLine) {
+        // Clear previous highlights
+        lines.forEach(line => line.classList.remove('active'));
+        
+        // Highlight active phrase
+        activeLine.classList.add('active');
+
+        // Smoothly roll the active lyric paragraph line directly to the center of the box
+        activeLine.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  </script>
+
+</body>
+</html>
