@@ -44,16 +44,23 @@
                  width: 95%;
                  max-width: 450px;
                  height: 300px;
-                 overflow-y: auto;
-                 background-color: rgba(15, 15, 20, 0.95);
-                 border: 2px solid #00f3ff;
-                 border-radius: 12px;
                  padding: 20px;
                  text-align: center;
-                 box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
-                 scroll-behavior: smooth;
-                 margin-bottom: 20px;
-                 animation: borderglow 3s infinite ease-in-out;
+                 border-radius: 16px;
+                 margin-bottom: 25px;
+
+                 background: rgba(255,255,255,0.05);
+                 backdrop-filter: blur(12px);
+                 -webkit-backdrop-filter: blur(12px);
+
+                 border: 1px solid rgba(255,255,255,0.2);
+                 box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+                 overflow-y: scroll;
+                 overflow-x: hidden;
+
+
+                 animation: liquidglow 4s infinite ease-in-out;
                 }
 
             .lyrics-container::-webkit-scrollbar {
@@ -61,31 +68,37 @@
                 }
 
             .lyric-line {
-                 color: #555566;
+                 color: #ffffdd;
                  font-size: 18px;
-                 margin: 25px 0;
-                 transition: all 0.4s ease;
-                 opacity: 0.6;
+                 margin: 35px auto;
+                 transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                 opacity: 0.65;
+                 transform: scale(0.95);
+                 width: 90%;
+                 word-wrap: break-word;
+                 overflow-wrap: break-word;
+                 text-shadow: 1 1 3px rgba(0,0,0,0.8);
+
                  }
 
             .lyric-line.active {
                  color: #00f3ff;
                  font-weight: bold;
-                 font-size: 24px;
+                 font-size: 26px;
                  opacity: 1;
-                 text-shadow: 0 0 12px #00f3ff;
+                 text-shadow: 0 0 10px #00f3ff, 0 0 20px rgba(0,243,255,0.6), 1px 1px 3px rgba(0,0,0,0.9);
                  transform: scale(1.06);
                  animation: textpop 0.4s ease-out;
                   }
 
-            @keyframes borderglow {
+            @keyframes liquidglow {
              0%, 100% {
-                 border-color: #00f3ff;
-                 box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+                 border-color: rgba(255,255,255,0.2);
+                 box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37), 0 0 15 rgba(0, 243, 255,0.1);
                 }
              50% {
-                border-color: #0077ff;
-                box-shadow: 0 0 25px rgba(0, 119, 255, 0.6);
+                border-color: rgba(0,243,255,0.4);
+                box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37), 0 0 25px rgba(0,242,255,0.3);
                 }
             }
 
