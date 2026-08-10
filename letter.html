@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confession from Your Admirer 💌</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>From Your Admirer 💌</h1>
+        <p id="story">Hi! What's your name? 👋</p>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="startStory()">Start</button>
+        <div id="choiceContainer" style="display: none;">
+            <p id="choiceText"></p>
+            <button onclick="chooseYes()">Yes</button>
+            <button onclick="chooseNo()">No</button>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>🎉 Surprise! 🎉</h2>
+            <p id="finalMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
