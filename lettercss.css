@@ -30,3 +30,8 @@ button {
 button:hover {
     background-color: #ff4757;
 }
+
+#noButton {
+    position: fixed !important;
+    z-index: 999;
+}
