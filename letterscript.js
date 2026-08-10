@@ -19,3 +19,18 @@ function chooseNo() {
     document.getElementById('result').style.display = 'block';
     document.getElementById('finalMessage').textContent = `Okay, no worries! Just wanted to be honest. 🥺`;
 }
+
+function moveNoButton() {
+    const noBtn = document.getElementById('noButton');
+    
+    // Give the button absolute positioning so it can float anywhere
+    noBtn.style.position = 'absolute';
+    
+    // Calculate a random position within the browser window limits
+    const randomX = Math.floor(Math.random() * (window.innerWidth - noBtn.offsetWidth));
+    const randomY = Math.floor(Math.random() * (window.innerHeight - noBtn.offsetHeight));
+    
+    // Apply the new coordinates to move the button instantly
+    noBtn.style.left = `${randomX}px`;
+    noBtn.style.top = `${randomY}px`;
+}
