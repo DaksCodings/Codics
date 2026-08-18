@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html>
+       <head>
+         <title>Act1</title>
+
+<style>
+
+body {
+  font-family: serif;
+  align-items: center;
+  text-align: center;
+  border: 3px solid skyblue;
+  justify-content: center;
+  margin: 140px;
+  animation-name: fadePop;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+table, th, td {
+  border: 1px solid skyblue;
+  border-collapse: collapse;
+  margin: auto;
+  animation-name: fadePop;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+th {
+  padding: 10px;
+}
+ td {
+   padding:10px;
+    text-align:left;
+}
+
+.title {
+  color: white;
+  margin: 10px;
+  animation-name: fadePop;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation-name: fadePop;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+ 
+p {
+  animation-name: fadePop;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+         
+@keyframes fadePop {
+  0% {opacity:0;
+    transform:scale(.75); }
+  100% {opacity: 1;
+    transform:scale(1);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<table style="width:80%;">
+  
+  <h1 class="title" style="background-color: Blue;">Web Page</h1>
+  <p>Create your own simple web page using HTML and CSS</p>
+  
+  <tr>
+  <th colspan="2" style="background-color: #f2f2f2;">About me</th>
+  </tr>
+  
+  <tr>
+    <td>Name:</td>
+    <td>Your Name</td>
+  </tr>
+  
+  <tr>
+    <td>Course:</td>
+    <td>Your Course</td>
+  </tr>
+  
+  <tr>
+    <td>Year Level:</td>
+    <td>Your Year Level</td>
+  </tr>
+  
+  <tr>
+    <td>School:</td>
+    <td>Your School</td>
+  </tr>
+  
+  <tr>
+    <th colspan="2" style="background-color: #f2f2f2;">My Hobbies</th>
+  </tr>
+  
+  <tr>
+    <td>Hobby 1</td>
+    <td>Reading Books</td>
+  </tr>
+  
+  <tr>
+    <td>Hobby 2:</td>
+    <td>Playing Online Games</td>
+  </tr>
+  
+  <tr>
+    <td>Hobby 3:</td>
+    <td>Listening to Music</td>
+  </tr>
+  
+  <tr>
+    <td>Hobby 4:</td>
+    <td>Watching Movies</td>
+  </tr>
+  
+  <tr>
+    <td>Hobby 5:</td>
+    <td>Playing Sports</td>
+  </tr>
+  
+</table>
+  
+  <button id="text">Click Me!</button>
+  
+</body>
+</html>
